@@ -1,8 +1,15 @@
-import Svg, {
+import {
   Circle,
   ClipPath,
   Defs,
   Ellipse,
+  FeColorMatrix,
+  FeGaussianBlur,
+  FeMerge,
+  FeMergeNode,
+  FeOffset,
+  Filter,
+  ForeignObject,
   G,
   Image,
   Line,
@@ -16,16 +23,13 @@ import Svg, {
   RadialGradient,
   Rect,
   Stop,
+  Svg,
+  Symbol,
   Text,
   TextPath,
   TSpan,
   Use,
-  Symbol,
-  Filter,
-  FeColorMatrix,
-  FeGaussianBlur,
-  FeOffset,
-} from './ReactNativeSVG';
+} from './elements';
 
 export const tags = {
   circle: Circle,
@@ -35,7 +39,10 @@ export const tags = {
   filter: Filter,
   feColorMatrix: FeColorMatrix,
   feGaussianBlur: FeGaussianBlur,
+  feMerge: FeMerge,
+  feMergeNode: FeMergeNode,
   feOffset: FeOffset,
+  foreignObject: ForeignObject,
   g: G,
   image: Image,
   line: Line,
